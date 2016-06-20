@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7071AD77-1809-4DAB-89BF-1B26FF6CC9A1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RLMyFitnessApp</RootNamespace>
+    <AssemblyName>RLMyFitnessApp</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FoodItem.cs" />
+    <Compile Include="MyBMRForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyBMRForm.Designer.cs">
+      <DependentUpon>MyBMRForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyExerciseLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyExerciseLogForm.Designer.cs">
+      <DependentUpon>MyExerciseLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyFood.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyFood.Designer.cs">
+      <DependentUpon>MyFood.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyMealPlanner.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyMealPlanner.Designer.cs">
+      <DependentUpon>MyMealPlanner.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyProfileForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyProfileForm.Designer.cs">
+      <DependentUpon>MyProfileForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyTimer.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyTimer.Designer.cs">
+      <DependentUpon>MyTimer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MyWaterForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MyWaterForm.Designer.cs">
+      <DependentUpon>MyWaterForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyBMRForm.resx">
+      <DependentUpon>MyBMRForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyExerciseLogForm.resx">
+      <DependentUpon>MyExerciseLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyFood.resx">
+      <DependentUpon>MyFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyMealPlanner.resx">
+      <DependentUpon>MyMealPlanner.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyProfileForm.resx">
+      <DependentUpon>MyProfileForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyTimer.resx">
+      <DependentUpon>MyTimer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MyWaterForm.resx">
+      <DependentUpon>MyWaterForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\10561682_10203266438276474_999562617659559768_n.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\project2_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\G_WATER-BOTTLE_CUFF_v4-106x300.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
